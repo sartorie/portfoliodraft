@@ -1,0 +1,515 @@
+body{
+  font-family: "Heebo";
+  font-size: 20px;
+}
+
+/* SKIP TO CONTENT */
+
+.skip a{
+  background: white;
+  left: 0;
+  padding: 6px;
+  position: absolute;
+  top: -40px;
+  -webkit-transition: top 1s ease-out;
+  transition: top 1s ease-out;
+  z-index: 1;
+}
+
+.skip a:focus{
+  top: 0px;
+}
+
+:focus{
+  border: 2px solid #f08335;
+  outline: none;
+}
+
+/* HEADER STYLE */
+
+header {
+  display: flex;
+  min-height: 130px;
+  height: auto;
+  width: 100%;
+  flex-direction: column;
+  background-color:#1e4883;
+}
+
+.tagline {
+  flex: .75;
+  text-align: center;
+  font-family: "Poppins";
+  color: white;
+  font-size:2.5em;
+  padding-top: 15px;
+}
+
+.nav {
+  flex: .25;
+  text-align: center;
+}
+nav ul{
+  list-style-type: none;
+}
+
+nav li{
+  display: inline;
+  color: white;
+  padding-right: 50px;
+  font-family: "Poppins";
+}
+
+nav li a{
+  color: white;
+  font-size: 1.25em;
+  text-decoration: none;
+}
+
+nav li a:hover {
+  font-weight: bold;
+  color: grey;
+}
+
+nav li a.active {
+  color: #f08335;
+  font-style: bold;
+}
+
+/* IMAGE STYLES */
+
+img {
+  height: 350px;
+  width: auto;
+}
+
+.image{
+  width: 95%;
+  height: auto;
+  padding: 2.5%;
+}
+
+/* FOOTER STYLE */
+footer{
+  position: fixed;
+  max-height:100px;
+  min-height: 50px;
+  background-color: #d3d3d3;
+  color: white;
+  grid-column: 1 / -1;  /*Can you explain what this does?*/
+  padding-top: 30px;
+  text-align: center;
+}
+
+/* GRID PHONE */
+  .container{
+    display: grid;
+    grid-template-columns: 100%;
+  }
+  main h1{
+    font-size: 1.5em;
+    padding: 20px;
+  }
+  main h2{
+    font-size: 1.25em;
+    padding: 20px;
+  }
+  .homepageimage{
+    grid-column: 1;
+    grid-row: 2;
+  }
+  .hallo{
+    grid-column: 1;
+    grid-row: 1;
+    padding: 2.5%;
+  }
+  .about{
+    grid-column:0;
+    grid-row: 1;
+    padding: 2.5%;
+  }
+
+  .location{
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .ibimap{
+    grid-column: 1;
+    grid-row: 3;
+    text-align:right;
+  }
+
+  .gmap_canvas {
+    grid-column: 1;
+    grid-row: 3;
+    background:none!important;
+    height:95%;
+    width:auto;
+    padding: 2.5%;
+  }
+
+  .iframemap{
+    grid-column: 1;
+    grid-row: 3;
+    width:95%;
+    min-height:500px;
+    max-height: 600px;
+    padding: 2.5%;
+    height: auto;
+  }
+
+  .directorimage{
+    grid-column: 1;
+    grid-row: 5;
+  }
+
+  .director{
+    grid-column: 1;
+    grid-row: 4;
+  }
+
+  .heading{
+    grid-column: 1;
+    grid-row:1;
+  }
+
+  .projectsdiagram{
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .workshopseries{
+    grid-column: 1;
+    grid-row: 4;
+  }
+
+  .teaching{
+    grid-column: 1;
+    grid-row: 3;
+  }
+
+  .workshop1{
+    grid-column: 1;
+    grid-row: 5;
+  }
+
+  .workshop2{
+    grid-column: 1;
+    grid-row: 6;
+  }
+
+  .workshop3{
+    grid-column: 1;
+    grid-row: 7;
+  }
+
+  .internationalwebinar{
+    grid-column: 1;
+    grid-row: 8;
+  }
+
+  .teri{
+    grid-column: 1;
+    grid-row: 10;
+  }
+
+  .webinarvideo{
+    grid-column: 1;
+    grid-row: 9;
+  }
+
+  .libraryarticle{
+    grid-column: 1;
+    grid-row: 11;
+  }
+
+  .socialmedia{
+    grid-column: 1;
+    grid-row: 12;
+  }
+
+  .tweet{
+    grid-column: 1;
+    grid-row: 13;
+  }
+
+/* DESKTOP */
+@media screen and (min-width: 1025px){
+  .container{
+    display: grid;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+  }
+  main h1{
+    font-size: 1.5em;
+    padding: 20px;
+  }
+  main h2{
+    font-size: 1.25em;
+    padding: 20px;
+  }
+  .homepageimage{
+    grid-column: 1;
+    grid-row: 1;
+  }
+  .hallo{
+    grid-column: 2/-1;
+    grid-row: 1;
+    padding: 2.5%;
+  }
+  .about{
+    grid-column: 1/-2;
+    grid-row: 1;
+    padding: 2.5%;
+  }
+
+  .location{
+    grid-column: 1/3;
+    grid-row: 2;
+  }
+
+  .ibimap{
+    grid-column: 3;
+    grid-row: 1/3;
+    text-align:right;
+  }
+
+  .gmap_canvas {
+    grid-column: 3;
+    grid-row: 1/3
+    background:none!important;
+    height:95%;
+    width:auto;
+    padding: 2.5%;
+  }
+
+  .iframemap{
+    grid-column: 3;
+    grid-row: 1/3;
+    width:95%;
+    min-height:500px;
+    max-height: 600px;
+    padding: 2.5%;
+    height: auto;
+  }
+
+  .directorimage{
+    grid-column: 1;
+    grid-row: 3;
+  }
+
+  .director{
+    grid-column: 2/-1;
+    grid-row: 3;
+  }
+
+  .heading{
+    grid-column: 1/3;
+    grid-row:1;
+  }
+
+  .projectsdiagram{
+    grid-column: 3;
+    grid-row: 1;
+  }
+
+  .workshopseries{
+    grid-column: 2/4;
+    grid-row: 2;
+  }
+
+  .teaching{
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .workshop1{
+    grid-column: 1;
+    grid-row: 3;
+  }
+  .workshop2{
+    grid-column: 2;
+    grid-row: 3;
+  }
+
+  .workshop3{
+    grid-column: 3;
+    grid-row: 3;
+  }
+
+  .internationalwebinar{
+    grid-column: 3;
+    grid-row: 4;
+  }
+
+  .teri{
+    grid-column: 3;
+    grid-row: 5
+  }
+  .webinarvideo{
+    grid-column: 1/3;
+    grid-row: 4/6;
+    text-align: center;
+  }
+
+  .libraryarticle{
+    grid-column: 1/-1;
+    grid-row: 6;
+  }
+
+  .socialmedia{
+    grid-column: 1/3;
+    grid-row: 7;
+  }
+
+  .tweet{
+    grid-column: 3;
+    grid-row: 7;
+
+  }
+}
+
+/* TABLET */
+@media screen and (min-width: 768px) and (max-width: 1024px){
+
+  .container{
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+  main h1{
+    font-size: 1.5em;
+    padding: 20px;
+  }
+  main h2{
+    font-size: 1.25em;
+    padding: 20px;
+  }
+  .homepageimage{
+    grid-column: 1;
+    grid-row: 1;
+  }
+  .hallo{
+    grid-column: 2;
+    grid-row: 1;
+    padding: 2.5%;
+  }
+  .about{
+    grid-column: 1/-1;
+    grid-row: 1;
+    padding: 2.5%;
+  }
+
+  .location{
+      grid-column: 1;
+      grid-row: 2;
+  }
+
+  .ibimap{
+    grid-column: 2;
+    grid-row: 2;
+    text-align:right;
+  }
+
+  .gmap_canvas {
+    grid-column: 2;
+    grid-row: 2;
+    background:none!important;
+    height:95%;
+    width:auto;
+    padding: 2.5%;
+  }
+
+  .iframemap{
+    grid-column: 2;
+    grid-row: 2;
+    width:95%;
+    min-height:500px;
+    max-height: 600px;
+    padding: 2.5%;
+    height: auto;
+  }
+
+  .directorimage{
+    grid-column: 1;
+    grid-row: 3;
+  }
+
+  .director{
+    grid-column: 2;
+    grid-row: 3;
+  }
+
+  .heading{
+    grid-column: 1/-1;
+    grid-row:1;
+    text-align: center;
+  }
+
+  .projectsdiagram{
+    grid-column: 1/-1;
+    grid-row: 2;
+    align-items: center;
+  }
+
+  .workshopseries{
+    grid-column: 1/-1;
+    grid-row: 3;
+  }
+
+  .teaching{
+    grid-column: 1;
+    grid-row: 4;
+  }
+
+  .workshop1{
+    grid-column: 2;
+    grid-row: 4;
+  }
+
+  .workshop2{
+    grid-column: 1;
+    grid-row: 5;
+  }
+
+  .workshop3{
+    grid-column: 2;
+    grid-row: 5;
+  }
+
+  .internationalwebinar{
+    grid-column: 1;
+    grid-row: 6;
+  }
+
+  .webinarvideo{
+    grid-column: 2;
+    grid-row: 6;
+  }
+
+  .teri{
+    grid-column: 1/-1;
+    grid-row: 7;
+    align-items: center;
+  }
+
+  .libraryarticle{
+    grid-column: 1/-1;
+    grid-row: 8;
+  }
+
+  .socialmedia{
+    grid-column: 1;
+    grid-row: 9;
+  }
+
+  .tweet{
+    grid-column: 2;
+    grid-row: 9;
+  }
+}
+
+@media print {
+       body:after{
+         content:url(https://chart.googleapis.com/chart?cht=qr&chs=150x150&chl=http://yourdomain.com&choe=UTF-8)
+       }
+}
