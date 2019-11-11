@@ -1,10 +1,52 @@
+html{
+    scroll-behavior: smooth;
+}
+
 body{
   font-family: "Heebo";
   font-size: 20px;
   line-height: 1.5;
 }
 
-/* SKIP TO CONTENT */
+.image{
+  width: 95%;
+  height: auto;
+  padding: 2.5%;
+}
+
+main h1{
+  font-size: 2em;
+  padding: 2.5%;
+  text-align: center;
+  font-family: "Poppins";
+  color: #1e4883;
+  font-weight: bolder;
+}
+
+main h2{
+  font-size: 1.5em;
+  padding: 2.5%;
+  text-align: left;
+  font-family: "Poppins";
+  color: #f08335;
+  font-weight: bolder;
+}
+
+main p{
+  padding: 2.5%;
+}
+
+main p a{
+  color: #f08335;
+  text-decoration: none;
+}
+
+iframe{
+    width:95%;
+    min-height:500px;
+    padding: 2.5%;
+    height: auto;
+}
 
 .skip a{
   background: white;
@@ -26,8 +68,7 @@ body{
   outline: none;
 }
 
-/* HEADER STYLE */
-
+/* HEADER */
 header {
   display: flex;
   min-height: 130px;
@@ -50,6 +91,7 @@ header {
   flex: .25;
   text-align: center;
 }
+
 nav ul{
   list-style-type: none;
 }
@@ -77,24 +119,12 @@ nav li a.active {
   font-style: bold;
 }
 
-/* IMAGE STYLES */
 
-/* img {
-  height: 350px;
-  width: auto;
-} */
+/* Grid footer */
 
-.image{
-  width: 95%;
-  height: auto;
-  padding: 2.5%;
-}
-
-iframe{
-  width:95%;
-  min-height:500px;
-  padding: 2.5%;
-  height: auto;
+.container2{
+  display: grid;
+  grid-template: 33.33% 33.33% 33.33%;
 }
 
 footer{
@@ -107,10 +137,6 @@ footer{
   /* position: sticky; */
 }
 
-.address{
-  padding: .5em
-}
-
 footer nav ul{
   list-style-type: none;
 }
@@ -118,25 +144,13 @@ footer nav ul{
 footer nav a{
   color: white;
   text-decoration: none;
-  font-size: .75em;
+  font-size: 1em;
 }
 
 footer nav a:hover{
   color: #f08335;
   font-style: bold;
-  font-size: 1em;
-}
-
-/* GRID PHONE STYLE */
-
-.container2{
-  display: grid;
-  grid-template: 100%;
-}
-
-.footernav{
-  grid-column: 1;
-  grid-row: 1;
+  font-size: 1.5em;
 }
 
 footer nav li{
@@ -145,480 +159,266 @@ footer nav li{
   font-family: "Poppins";
 }
 
+.footernav{
+  grid-column: 3;
+  grid-row: 1;
+  padding-top: 1.5em;
+  padding-right: .5em
+}
+
 .address{
-  grid-column: 1;
-  grid-row: 2;
-  text-align: center;
+  grid-column: 2;
+  grid-row: 1;
+  text-align: left;
+  padding:2.5%;
 }
 
 .footerimg{
   grid-column: 1;
+  grid-row: 1;
+  padding-top: 1em;
+  padding-left: .5em;
+}
+
+/* Grid Phone */
+.container{
+  display: grid;
+  grid-template-columns: 33.33% 33.33% 33.33%;
+}
+
+.homepageimage{
+  grid-column: 1;
+  grid-row: 1;
+}
+.hallo{
+  grid-column: 2/-1;
+  grid-row: 1;
+  padding: 2.5%;
+}
+
+.berlinchurch{
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.eastsidegallery{
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.humboldtuniversity{
+  grid-column: 3;
+  grid-row: 2;
+}
+
+.aboutheading{
+  grid-column:1/4;
+  grid-row: 1;
+  text-align: center;
+}
+
+.whatisthecentreheading{
+  grid-column: 1/3;
+  grid-row: 2;
+}
+
+.whatisthecentre{
+  grid-column: 3;
+  grid-row: 3;
+  padding: 2.5%;
+}
+
+.researchyoutube{
+  grid-column: 1/3;
   grid-row: 3;
 }
 
-/* IMAGE STYLES */
-
-/* img {
-  height: 350px;
-  width: auto;
-} */
-
-.image{
-  width: 95%;
-  height: auto;
-  padding: 2.5%;
+.locationheading{
+  grid-column: 1/4;
+  grid-row: 4;
 }
 
-/* GRID PHONE */
-  .container{
-    display: grid;
-    grid-template-columns: 100%;
-  }
-  main h1{
-    font-size: 2em;
-    padding: 2.5%;
-    text-align: center;
-    font-family: "Poppins";
-    color:#1e4883;
-    font-weight: bolder;
-  }
-  main h2{
-    font-size: 1.5em;
-    padding: 2.5%;
-    text-align: center;
-    font-family: "Poppins";
-    color: #f08335;
-    font-weight: bolder;
-  }
-
-  main p a{
-    color: #f08335;
-    text-decoration: none;
-  }
-
-main p{
-  padding: 2.5%;
+.location{
+  grid-column: 3;
+  grid-row: 5;
 }
 
-  .homepageimage{
-    grid-column: 1;
-    grid-row: 2;
-  }
-  .hallo{
-    grid-column: 1;
-    grid-row: 1;
-  }
+.ibimap{
+  grid-column: 1/3;
+  grid-row: 5;
+}
 
-  .berlinchurch{
-    grid-column: 1;
-    grid-row: 3;
-  }
+.gmap_canvas {
+  grid-column: 1/3;
+  grid-row: 5;
+  background:none!important;
+  height:95%;
+  width:95%;
+  /* padding: 2.5%; */
+}
 
-  .eastsidegallery{
-    grid-column: 1;
-    grid-row: 4;
-  }
+.iframemap{
+  grid-column: 1/3;
+  grid-row: 5;
+}
 
-  .humboldtuniversity{
-    grid-column: 1;
-    grid-row: 5;
-  }
+.directorheading{
+  grid-column: 1/3;
+  grid-row: 6;
+}
 
-  .aboutheading{
-    grid-column:1;
-    grid-row: 1;
-  }
+.directorimage{
+  grid-column: 1;
+  grid-row: 7;
+}
 
-  .whatisthecentreheading{
-    grid-column: 1;
-    grid-row: 2;
-  }
+.director{
+  grid-column: 2/4;
+  grid-row: 7;
+}
 
-  .whatisthecentre{
-    grid-column: 1;
-    grid-row: 3;
-  }
+.heading{
+  grid-column: 1/4;
+  grid-row:1;
+}
 
-  .researchyoutube{
-    grid-column: 1;
-    grid-row: 4;
-  }
+.projectsdiagram{
+  grid-column: 1;
+  grid-row: 2;
+}
 
-  .locationheading{
-    grid-column: 1;
-    grid-row: 5;
-  }
+.projectsoverview{
+  grid-column: 2/4;
+  grid-row: 2;
+}
 
-  .location{
-    grid-column: 1;
-    grid-row: 6;
-  }
+.workshopseriesheading{
+  grid-column: 1/4;
+  grid-row: 3;
+}
 
-  .ibimap{
-    grid-column: 1;
-    grid-row: 7;
-  }
+.workshopseries{
+  grid-column: 2/4;
+  grid-row: 4;
+}
 
-  .gmap_canvas {
-    grid-column: 1;
-    grid-row: 7;
-    background:none!important;
-    height:95%;
-    width:95%;
-  }
+.teaching{
+  grid-column: 1;
+  grid-row: 4;
+}
 
-  .iframemap{
-    grid-column: 1;
-    grid-row: 7;
-  }
+.workshop1{
+  grid-column: 1;
+  grid-row: 5;
+}
 
-  .directorheading{
-    grid-column: 1;
-    grid-row: 8;
-  }
+.workshop2{
+  grid-column: 2;
+  grid-row: 5;
+}
 
-  .directorimage{
-    grid-column: 1;
-    grid-row: 10;
-  }
+.workshop3{
+  grid-column: 3;
+  grid-row: 5;
+}
 
-  .director{
-    grid-column: 1;
+.internationalwebinarheading{
+  grid-column: 1/4;
+  grid-row: 6;
+}
+
+.internationalwebinar{
+  grid-column: 3;
+  grid-row: 7;
+}
+
+.teri{
+  grid-column: 3;
+  grid-row: 8;
+}
+
+.webinarvideo{
+  grid-column: 1/3;
+  grid-row: 7/9;
+}
+
+.libraryarticleheading{
+    grid-column: 1/4;
     grid-row: 9;
-  }
+}
 
-  .heading{
-    grid-column: 1;
-    grid-row:1;
-  }
+.libraryarticle{
+  grid-column: 2/4;
+  grid-row: 10;
+}
 
-  .projectsdiagram{
-    grid-column: 1;
-    grid-row: 3;
-  }
+.officework{
+  grid-column: 1;
+  grid-row: 10;
+}
 
-  .projectsoverview{
-    grid-column: 1;
-    grid-row: 2;
-    /* padding: 2.5%; */
-  }
+.socialmediaheading{
+  grid-column: 1/4;
+  grid-row: 11;
+}
 
-  .workshopseriesheading{
-    grid-column: 1;
-    grid-row: 4;
-  }
+.socialmedia{
+  grid-column: 2/4;
+  grid-row: 12;
+}
 
-  .workshopseries{
-    grid-column: 1;
-    grid-row: 5;
-  }
+.tweet{
+  grid-column: 1;
+  grid-row: 12;
+}
 
-  .teaching{
-    grid-column: 1;
-    grid-row:6 ;
-  }
+.lawschool{
+  grid-column: 1;
+  grid-row: 1;
+}
 
-  .workshop1{
-    grid-column: 1;
-    grid-row: 7;
-  }
+.benz{
+  grid-column: 2;
+  grid-row: 1;
+}
 
-  .workshop2{
-    grid-column: 1;
-    grid-row: 8;
-  }
+.river{
+  grid-column: 3;
+  grid-row: 1;
+}
 
-  .workshop3{
-    grid-column: 1;
-    grid-row: 9;
-  }
+.wall{
+  grid-column: 1;
+  grid-row: 2;
+}
 
-  .internationalwebinarheading{
-    grid-column: 1;
-    grid-row: 10;
-  }
+.landscapeuni{
+  grid-column: 2;
+  grid-row: 2;
+}
 
-  .internationalwebinar{
-    grid-column: 1;
-    grid-row: 11;
-  }
+.hamburger{
+  grid-column: 3;
+  grid-row: 2;
+}
 
-  .teri{
-    grid-column: 1;
-    grid-row: 13;
-  }
+.flag{
+  grid-column: 1;
+  grid-row: 3;
+}
 
-  .webinarvideo{
-    grid-column: 1;
-    grid-row: 12;
-  }
+.natlgal{
+  grid-column: 2;
+  grid-row: 3;
+}
 
-  .libraryarticleheading{
-      grid-column: 1;
-      grid-row: 14;
-  }
-
-  .libraryarticle{
-    grid-column: 1;
-    grid-row: 15;
-  }
-
-  .officework{
-    grid-column: 1;
-    grid-row: 16;
-  }
-
-  .socialmediaheading{
-    grid-column: 1;
-    grid-row: 17;
-  }
-
-  .socialmedia{
-    grid-column: 1;
-    grid-row: 18;
-  }
-
-  .tweet{
-    grid-column: 1;
-    grid-row: 19;
-  }
-
-/* DESKTOP */
-@media screen and (min-device-width: 1025px){
-  .container{
-    display: grid;
-    grid-template-columns: 33.33% 33.33% 33.33%;
-  }
-
-  .container2{
-    display: grid;
-    grid-template: 33.33% 33.33% 33.33%;
-  }
-
-  .footernav{
-    grid-column: 3;
-    grid-row: 1;
-    padding-top: 1.5em;
-    padding-right: .5em
-  }
-
-  footer nav li{
-    color: white;
-    padding-right: 1em;
-    font-family: "Poppins";
-    text-align: right;
-  }
-
-  .address{
-    grid-column: 2;
-    grid-row: 1;
-    text-align: left;
-    padding-top: 1.5em;
-  }
-
-  .footerimg{
-    grid-column: 1;
-    grid-row: 1;
-    padding-top: 1em;
-    padding-left: .5em;
-  }
-  main h1{
-    padding: 20px;
-    text-align: center;
-  }
-  main h2{
-    text-align: left;
-  }
-  .homepageimage{
-    grid-column: 1;
-    grid-row: 1;
-  }
-  .hallo{
-    grid-column: 2/-1;
-    grid-row: 1;
-    padding: 2.5%;
-  }
-
-  .berlinchurch{
-    grid-column: 1;
-    grid-row: 2;
-  }
-
-  .eastsidegallery{
-    grid-column: 2;
-    grid-row: 2;
-  }
-
-  .humboldtuniversity{
-    grid-column: 3;
-    grid-row: 2;
-  }
-
-  .aboutheading{
-    grid-column:1/4;
-    grid-row: 1;
-    text-align: center;
-  }
-
-  .whatisthecentreheading{
-    grid-column: 1/3;
-    grid-row: 2;
-  }
-
-  .whatisthecentre{
-    grid-column: 3;
-    grid-row: 3;
-    padding: 2.5%;
-  }
-
-  .researchyoutube{
-    grid-column: 1/3;
-    grid-row: 3;
-  }
-
-  .locationheading{
-    grid-column: 1/4;
-    grid-row: 4;
-  }
-
-  .location{
-    grid-column: 3;
-    grid-row: 5;
-  }
-
-  .ibimap{
-    grid-column: 1/3;
-    grid-row: 5;
-  }
-
-  .gmap_canvas {
-    grid-column: 1/3;
-    grid-row: 5;
-    background:none!important;
-    height:95%;
-    width:95%;
-    /* padding: 2.5%; */
-  }
-
-  .iframemap{
-    grid-column: 1/3;
-    grid-row: 5;
-  }
-
-  .directorheading{
-    grid-column: 1/3;
-    grid-row: 6;
-  }
-
-  .directorimage{
-    grid-column: 1;
-    grid-row: 7;
-  }
-
-  .director{
-    grid-column: 2/4;
-    grid-row: 7;
-    padding: 2.5%;
-  }
-
-  .heading{
-    grid-column: 1/4;
-    grid-row:1;
-  }
-
-  .projectsdiagram{
-    grid-column: 1;
-    grid-row: 2;
-  }
-
-  .projectsoverview{
-    grid-column: 2/4;
-    grid-row: 2;
-  }
-
-  .workshopseriesheading{
-    grid-column: 1/4;
-    grid-row: 3;
-  }
-
-  .workshopseries{
-    grid-column: 2/4;
-    grid-row: 4;
-  }
-
-  .teaching{
-    grid-column: 1;
-    grid-row: 4;
-  }
-
-  .workshop1{
-    grid-column: 1;
-    grid-row: 5;
-  }
-
-  .workshop2{
-    grid-column: 2;
-    grid-row: 5;
-  }
-
-  .workshop3{
-    grid-column: 3;
-    grid-row: 5;
-  }
-
-  .internationalwebinarheading{
-    grid-column: 1/4;
-    grid-row: 6;
-  }
-
-  .internationalwebinar{
-    grid-column: 3;
-    grid-row: 7;
-  }
-
-  .teri{
-    grid-column: 3;
-    grid-row: 8;
-  }
-
-  .webinarvideo{
-    grid-column: 1/3;
-    grid-row: 7/9;
-  }
-
-  .libraryarticleheading{
-      grid-column: 1/4;
-      grid-row: 9;
-  }
-
-  .libraryarticle{
-    grid-column: 2/4;
-    grid-row: 10;
-  }
-
-  .officework{
-    grid-column: 1;
-    grid-row: 10;
-  }
-
-  .socialmediaheading{
-    grid-column: 1/4;
-    grid-row: 11;
-  }
-
-  .socialmedia{
-    grid-column: 2/4;
-    grid-row: 12;
-  }
-
-  .tweet{
-    grid-column: 1;
-    grid-row: 12;
-  }
+.cathedral{
+  grid-column: 3;
+  grid-row: 3;
 }
 
 /* TABLET */
-@media screen and (min-device-width: 667px) and (max-device-width: 1023px){
+@media only screen and (min-width: 768px) and (max-width: 1023px){
 
   .container{
     display: grid;
@@ -671,7 +471,6 @@ main p{
   .hallo{
     grid-column: 2/3;
     grid-row: 1/3;
-    /* padding: 2.5%; */
   }
 
   .berlinchurch{
@@ -692,7 +491,6 @@ main p{
   .aboutheading{
     grid-column:1/3;
     grid-row: 1;
-    /* text-align: center; */
   }
 
   .whatisthecentreheading{
@@ -847,7 +645,324 @@ main p{
     grid-column: 1;
     grid-row: 14;
   }
+
+  .lawschool{
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .benz{
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .river{
+    grid-column: 1;
+    grid-row: 3;
+  }
+
+  .wall{
+    grid-column: 1/3;
+    grid-row: 2;
+  }
+
+  .landscapeuni{
+    grid-column: 1/3;
+    grid-row: 4;
+  }
+
+  .hamburger{
+    grid-column: 1/3;
+    grid-row: 6;
+  }
+
+  .flag{
+    grid-column: 2;
+    grid-row: 3;
+  }
+
+  .natlgal{
+    grid-column: 1;
+    grid-row: 5;
+  }
+
+  .cathedral{
+    grid-column: 2;
+    grid-row: 5;
+  }
 }
+/* PHONE */
+@media screen and (min-width: 375px) and (max-width: 767px){
+
+  main h2{
+    text-align: center;
+  }
+
+  .container2{
+    display: grid;
+    grid-template: 100%;
+  }
+
+  .footernav{
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  footer nav a{
+    font-size: 1em;
+ }
+
+  .address{
+    grid-column: 1;
+    grid-row: 2;
+    text-align: center;
+  }
+
+  .footerimg{
+    grid-column: 1;
+    grid-row: 3;
+  }
+
+  .container{
+    display: grid;
+    grid-template-columns: 100%;
+  }
+
+  .homepageimage{
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .hallo{
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .berlinchurch{
+    grid-column: 1;
+    grid-row: 3;
+  }
+
+  .eastsidegallery{
+    grid-column: 1;
+    grid-row: 4;
+  }
+
+  .humboldtuniversity{
+    grid-column: 1;
+    grid-row: 5;
+  }
+
+  .aboutheading{
+    grid-column:1;
+    grid-row: 1;
+  }
+
+  .whatisthecentreheading{
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .whatisthecentre{
+    grid-column: 1;
+    grid-row: 3;
+  }
+
+  .researchyoutube{
+    grid-column: 1;
+    grid-row: 4;
+  }
+
+  .locationheading{
+    grid-column: 1;
+    grid-row: 5;
+  }
+
+  .location{
+    grid-column: 1;
+    grid-row: 6;
+  }
+
+  .ibimap{
+    grid-column: 1;
+    grid-row: 7;
+  }
+
+  .gmap_canvas {
+    grid-column: 1;
+    grid-row: 7;
+    background:none!important;
+    height:95%;
+    width:95%;
+  }
+
+  .iframemap{
+    grid-column: 1;
+    grid-row: 7;
+  }
+
+  .directorheading{
+    grid-column: 1;
+    grid-row: 8;
+  }
+
+  .directorimage{
+    grid-column: 1;
+    grid-row: 10;
+  }
+
+  .director{
+    grid-column: 1;
+    grid-row: 9;
+  }
+
+  .heading{
+    grid-column: 1;
+    grid-row:1;
+  }
+
+  .projectsdiagram{
+    grid-column: 1;
+    grid-row: 3;
+  }
+
+  .projectsoverview{
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .workshopseriesheading{
+    grid-column: 1;
+    grid-row: 4;
+  }
+
+  .workshopseries{
+    grid-column: 1;
+    grid-row: 5;
+  }
+
+  .teaching{
+    grid-column: 1;
+    grid-row:6 ;
+  }
+
+  .workshop1{
+    grid-column: 1;
+    grid-row: 7;
+  }
+
+  .workshop2{
+    grid-column: 1;
+    grid-row: 8;
+  }
+
+  .workshop3{
+    grid-column: 1;
+    grid-row: 9;
+  }
+
+  .internationalwebinarheading{
+    grid-column: 1;
+    grid-row: 10;
+  }
+
+  .internationalwebinar{
+    grid-column: 1;
+    grid-row: 11;
+  }
+
+  .teri{
+    grid-column: 1;
+    grid-row: 13;
+  }
+
+  .webinarvideo{
+    grid-column: 1;
+    grid-row: 12;
+  }
+
+  .libraryarticleheading{
+      grid-column: 1;
+      grid-row: 14;
+  }
+
+  .libraryarticle{
+    grid-column: 1;
+    grid-row: 15;
+  }
+
+  .officework{
+    grid-column: 1;
+    grid-row: 16;
+  }
+
+  .socialmediaheading{
+    grid-column: 1;
+    grid-row: 17;
+  }
+
+  .socialmedia{
+    grid-column: 1;
+    grid-row: 18;
+  }
+
+  .tweet{
+    grid-column: 1;
+    grid-row: 19;
+  }
+
+  .lawschool{
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .benz{
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .river{
+    grid-column: 1;
+    grid-row: 3;
+  }
+
+  .wall{
+    grid-column: 1;
+    grid-row: 4;
+  }
+
+  .landscapeuni{
+    grid-column: 1;
+    grid-row: 5;
+  }
+
+  .hamburger{
+    grid-column: 1;
+    grid-row: 6;
+  }
+
+  .flag{
+    grid-column: 1;
+    grid-row: 7;
+  }
+
+  .natlgal{
+    grid-column: 1;
+    grid-row: 8;
+  }
+
+  .cathedral{
+    grid-column: 1;
+    grid-row: 9;
+  }
+
+}
+
+@media screen and (prefers-reduced-motion: reduce){
+  html{
+      scroll-behavior: auto; /* Removes scroll animation */
+  }
+
 
 @media print {
        body:after{
