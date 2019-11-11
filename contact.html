@@ -7,7 +7,7 @@
       <link rel="stylesheet" type="text/css" href="css/html5reset.css">
       <link rel="stylesheet" type="text/css" href="css/style.css">
       <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
-      <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+      <link href='https://fonts.googleapis.com/css?family=Heebo' rel='stylesheet'>
       <title>Contact Page</title>
     </head>
     <body>
@@ -23,14 +23,55 @@
             <li><a href="aboutheadtcentre.html">About the Headt Centre</a></li>
             <li><a href="projects.html">Projects</a></li>
             <li><a href="photogallery.html">Photo Gallery</a></li>
-            <li><a href="https://headt.eu/">The Headt Centre</a></li>
             <li><a href="contact.html" class="active">Contact</a></li>
           </ul>
         </nav>
       </div>
     </header>
     <main>
+      <div class="container">
+      <div class="questionsheading">
+        <h1>Do You Have Any Questions?</h1>
+      </div>
+      <div class="contactphoto">
+        <img class=image src="images/contactpicture.jpg" alt="picture of Emily">
+      </div>
+      <div class="contactinfo">
+        <p>Do you have any questions about my experience? Send me a message using this contact form and I will get back with you as soon as possible! Please leave your name, email, today's date, and your message.</p>
+      </div>
+      <div class="contactform">
+        <form id="main" method="POST" action="https://formspree.io/mdooevjw">
+          <fieldset class="contact">
+            <label>
+    Name
+              <input type="text" name="name" id="name">
+            </label>
+            <label>
+    Email
+              <input type="email" name="email" id="email">
+            </label>
+            <label>
+              Date
+              <input type="date" name="todays-date" id="todays-date">
+            </label>
+            <label>
+              Message
+              <textarea name="message" id="message"></textarea>
+            </label>
+          </fieldset>
+          <fieldset class="submit">
+            <input class="btn" type="submit" name="submit" value="Get In Touch!">
+          </fieldset>
+       </form>
+      </div>
+      <!-- <div class="contactheading">
+        <h2>Contact</h2>
+      </div> -->
 
+      <div class="end">
+        <h1>Auf Wiedersehen!</h1>
+      </div>
+    </div>
     </main>
     <footer>
       <div class="container2">
